@@ -59,8 +59,14 @@
         }
 
 .content h2 i {
-    margin-right: 8px; /* Adjust the spacing between the icon and text */
+    margin-left: 2px; /* Adjust this value to move the icon to the right */
+    font-style: normal;
+    font-size: 18px;
+    vertical-align: middle; /* Optional: ensures the icon aligns nicely with the text */
+    margin-top: -5px;
 }
+
+
         .content h2 {
             font-family: 'Bernard MT Condensed', serif;
             font-size: 1.8em;

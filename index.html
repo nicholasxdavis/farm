@@ -7,67 +7,108 @@
     <title>FARMesilla - Sip, Shop & Eat in Mesilla, NM</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #2E2E2E;
+            background-color: #DDBA94;
+            background-image: url('https://www.transparenttextures.com/patterns/cardboard.png');
+            background-size: 300px 300px;
+            background-attachment: fixed;
+            background-blend-mode: multiply;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            margin: 0 3px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            position: relative;
+        }
+
+        nav a:hover,
+        nav a.active {
+            text-decoration: underline;
+            color: var(--accent-color); /* Adjust this to your desired active link color */
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+
+        /* Hero Section Styles */
+.hero {
+            background-image: url('img/bg4.jpg'); /* Make sure this image is high quality */
+            background-size: cover; /* or consider using 'contain' for different effects */
+            background-position: center;
+            height: 400px; /* Keep this as is */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white; /* Change text color for contrast */
+            text-align: center;
+            position: relative;
+            filter: blur(0px); /* Remove any blur effect if applied */
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.2); /* Black overlay with 50% opacity */
+            z-index: 1; /* Place overlay above the background image */
+        }
+
+
+        .hero h1 {
+            font-size: 3em; /* Adjust font size as necessary */
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.5em; /* Adjust font size as necessary */
+        }
+
+    </style>
 </head>
-<style>
-    body {
-        font-family: 'Montserrat', sans-serif;
-        color: #2E2E2E;
-        background-color: #DDBA94;
-        background-image: url('https://www.transparenttextures.com/patterns/cardboard.png');
-        background-size: 300px 300px;
-        background-attachment: fixed;
-        background-blend-mode: multiply;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        position: relative;
-    }
 
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-    }
-
-    nav a {
-        margin: 0 3px;
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        margin-top: auto;
-        position: relative;
-    }
-    nav a:hover,
-nav a.active {
-    text-decoration: underline;
-    color: var(--accent-color); /* Adjust this to your desired active link color */
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-</style>
 <body>
     <header>
         <img src="img/logo2.png" alt="FARMesilla Logo" class="logo">
         <nav>
-            
-                <a href="index.html" class="active">Home</a>
-                <a href="#menu">Menu</a>
-                <a href="#location">Location</a>
-                <a href="catering.html">Catering</a>
-        
+            <a href="index.html" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#location">Location</a>
+            <a href="catering.html">Catering</a>
         </nav>
     </header>
 
-    <div class="content">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1></h1>
+        <p> </p>
+    </section>
+
+<div class="content">
     <section id="about" class="cta cta-sign">
         <h2>ABOUT <i class="fas fa-seedling"></i></h2>
         <p>Welcome to FARMesilla, your favorite farm-to-market store in Mesilla, NM! We feature fresh, local ingredients, craft beer, wine, and unique gifts. Enjoy our casual menu crafted with farm-fresh ingredients.</p>
@@ -78,14 +119,15 @@ nav a.active {
         <p>Discover our rotating menu featuring exciting combinations of flavors using fresh ingredients. Perfect for breakfast, brunch, or lunch.</p>
     </section>
 
-        <section id="location" class="cta cta-sign">
+    <section id="location" class="cta cta-sign">
         <h2>LOCATION <i class="fas fa-map-marker-alt"></i></h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4001.2843345644333!2d-106.79923492387849!3d32.27956590924106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86de16151e21ec97%3A0xda4c8f9c1eade258!2sFARMesilla!5e1!3m2!1sen!2sus!4v1730482877450!5m2!1sen!2sus" width="100%" height="300" style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy"></iframe>
-            <p>1840 Avenida de Mesilla, Las Cruces, NM 88005</p>
-            <h5>Mon-Wed: Closed<br>Thu-Sat: 9 AM - 8 PM<br>Sun: - 9 AM - 6 PM</h5>
-            <h6>*Note that the hours listed above reflect our restaurant's standard hours of operation. For catering services, we are flexible and can accommodate your needs outside these hours.*</h6>
-        </section>
-    </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4001.2843345644333!2d-106.79923492387849!3d32.27956590924106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86de16151e21ec97%3A0xda4c8f9c1eade258!2sFARMesilla!5e1!3m2!1sen!2sus!4v1730482877450!5m2!1sen!2sus" width="100%" height="300" style="border:0; border-radius: 6px;" allowfullscreen="" loading="lazy"></iframe>
+        <p>1840 Avenida de Mesilla, Las Cruces, NM 88005</p>
+        <h5>Mon-Wed: Closed<br>Thu-Sat: 9 AM - 8 PM<br>Sun: - 9 AM - 6 PM</h5>
+        <h6>*Note that the hours listed above reflect our restaurant's standard hours of operation. For catering services, we are flexible and can accommodate your needs outside these hours.*</h6>
+    </section>
+</div>
+
 
     <footer>
         <p>&copy; 2024 FARMesilla. All rights reserved.</p>
