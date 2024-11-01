@@ -58,6 +58,9 @@
             margin-top: 40px;
         }
 
+.content h2 i {
+    margin-right: 8px; /* Adjust the spacing between the icon and text */
+}
         .content h2 {
             font-family: 'Bernard MT Condensed', serif;
             font-size: 1.8em;
