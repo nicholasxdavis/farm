@@ -4,8 +4,6 @@
             margin: 0;
             padding: 0;
         }
-
-
         /* Header */
         header {
             background: #2F2827;
@@ -47,35 +45,6 @@
             color: #DDBA94;
         }
 
-        /* Hero Section */
-        .hero {
-            background-image: url('img/bg.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            position: relative;
-            text-align: center;
-            font-family: 'Bernard MT Condensed', serif;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.6);
-        }
-
-        .hero h2 {
-            font-size: 2.8em;
-            font-weight: 700;
-            position: relative;
-            z-index: 1;
-        }
-
         /* Content Sections */
         .content {
             max-width: 800px;
@@ -96,6 +65,23 @@
             color: #3E2C29;
             margin-bottom: 15px;
         }
+         h6 {
+            padding-top: 10px;
+            font-family: 'Montserrat', serif;
+            font-size: 1.0em;
+            opacity: 0.8;
+            font-weight: 10;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        h5 {
+            padding-top: 10px;
+            font-family: 'Montserrat', serif;
+            font-size: 1.0em;
+            opacity: 1.8;
+            font-weight: 10;
+            color: #fff;
+        }
 
         .content p {
             font-family: 'Abadi MT', sans-serif;
@@ -109,10 +95,10 @@
         /* CTA and Location */
         /* Signboard Style */
 .cta-sign {
-    background: #2F2827;
+    background: #2F2827;ssssss
     color: #FFF8EF;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 6px;
     text-align: center;
     
     max-width: 700px;
@@ -184,8 +170,21 @@
             header h1 {
                 font-size: 2em;
             }
-
-            .hero h2 {
-                font-size: 2em;
-            }
         }
+        .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #DDBA94; /* Matches your theme */
+}
