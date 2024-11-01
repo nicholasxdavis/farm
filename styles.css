@@ -155,6 +155,25 @@
         font-size: 1.6em;
     }
 }
+@media (max-width: 768px) {
+    .cta-sign {
+        padding: 15px; /* Reduced padding for smaller screens */
+        margin: 10px; /* Adjusted margin for better spacing */
+    }
+
+    .cta-sign h2 {
+        font-size: 1.5em; /* Smaller font size for headings */
+    }
+
+    .cta-sign p {
+        font-size: 1em; /* Adjusted paragraph font size */
+    }
+
+    .cta-sign a {
+        padding: 10px 20px; /* Smaller padding for buttons */
+        font-size: 0.9em; /* Reduced font size for buttons */
+    }
+}
         /* Footer */
         footer {
             background: #2F2827;
@@ -193,7 +212,10 @@
     text-decoration: none;
     transition: color 0.3s;
 }
-
-.social-icons a:hover {
+.social-icons i {
+    font-size: 20px; /* Set icon size to 10px */
+    color: #e0e0e0; /* Change color as needed */
+}
+.social-icons i:hover {
     color: #DDBA94; /* Matches your theme */
 }
