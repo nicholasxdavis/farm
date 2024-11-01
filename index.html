@@ -57,7 +57,7 @@
             background-image: url('img/bg4.jpg'); /* Make sure this image is high quality */
             background-size: cover; /* or consider using 'contain' for different effects */
             background-position: center;
-            height: 400px; /* Keep this as is */
+            height: 350px; /* Keep this as is */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -65,7 +65,15 @@
             text-align: center;
             position: relative;
             filter: blur(0px); /* Remove any blur effect if applied */
+        border-top: 3px solid #937D65; /* Bottom border for a classy finish */
+        border-bottom: 3px solid #937D65; /* Bottom border for a classy finish */
+
+}
+        @media (max-width: 768px) {
+            .hero {
+            height: 250px;
         }
+    }
 
         .hero::before {
             content: '';
@@ -87,7 +95,245 @@
         .hero p {
             font-size: 1.5em; /* Adjust font size as necessary */
         }
+        /* General Reset and Base Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* Header */
+        header {
+    background: linear-gradient(to right, #2F2827, #1A100F); /* Gradient background for elegance */
+    color: #F4F4F4; /* Light text color for contrast */
+    padding: 20px 40px; /* Increased padding for a more spacious look */
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow for a sophisticated effect */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #DDBA94; /* Bottom border for a classy finish */
+}
 
+header .logo {
+    max-width: 120px; /* Slightly larger logo */
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif; /* More elegant font for the header title */
+    font-size: 2.8em; /* Slightly larger font size */
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* Uppercase for a formal look */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #FFF; /* White text for navigation links */
+    text-decoration: none;
+    margin: 0 20px; /* Increased margin for spacing */
+    font-weight: 600; /* Medium weight for emphasis */
+    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between; /* Space out logo and nav on mobile */
+    }
+    
+    nav {
+        font-size: 13px;
+        justify-content: flex-end; /* Align links to the right on mobile */
+        margin-right: 10px; /* Optional: add some margin on the right */
+    }
+
+    nav a {
+        margin: 0 5px; /* Adjust margin for mobile */
+    }
+}
+nav a:hover {
+    color: #DDBA94; /* Hover color for interaction */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+
+        /* Content Sections */
+        .content {
+            max-width: 800px;
+            margin: -40px auto 0;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .content section {
+            margin-top: 40px;
+        }
+
+.content h2 i {
+    margin-left: 2px; /* Adjust this value to move the icon to the right */
+    font-style: normal;
+    font-size: 18px;
+    vertical-align: middle; /* Optional: ensures the icon aligns nicely with the text */
+    margin-top: -5px;
+}
+
+
+        .content h2 {
+            font-family: 'Bernard MT Condensed', serif;
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #3E2C29;
+            margin-bottom: 15px;
+        }
+         h6 {
+            padding-top: 10px;
+            font-family: 'Montserrat', serif;
+            font-size: 1.0em;
+            opacity: 0.8;
+            font-weight: 10;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        h5 {
+            padding-top: 10px;
+            font-family: 'Montserrat', serif;
+            font-size: 1.0em;
+            opacity: 1.8;
+            font-weight: 10;
+            color: #fff;
+        }
+
+        .content p {
+            font-family: 'Abadi MT', sans-serif;
+            font-size: 1.1em;
+            color: #FFF;
+            line-height: 1.8;
+            margin-top: 10px;
+            padding: 0 15px;
+        }
+
+        /* CTA and Location */
+        /* Signboard Style */
+.cta-sign {
+    background: #2F2827;ssssss
+    color: #FFF8EF;
+    padding: 30px;
+    border-radius: 6px;
+    text-align: center;
+    
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.cta-sign h2 {
+    font-family: 'Bernard MT Condensed', serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #FFF8EF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.cta-sign p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    color: #FFF8EF;
+    line-height: 1.6;
+}
+
+.cta-sign a {
+    color: #3E2C29;
+    background: #C49B72;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-sign a:hover {
+    background: #B68760;
+}
+
+/* Additional Style for Mobile */
+@media (max-width: 768px) {
+    .cta-sign {
+        padding: 20px;
+    }
+
+    .cta-sign h2 {
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 768px) {
+    .cta-sign {
+        padding: 15px; /* Reduced padding for smaller screens */
+        margin: 10px; /* Adjusted margin for better spacing */
+    }
+
+    .cta-sign h2 {
+        font-size: 1.5em; /* Smaller font size for headings */
+    }
+
+    .cta-sign p {
+        font-size: 1em; /* Adjusted paragraph font size */
+    }
+
+    .cta-sign a {
+        padding: 10px 20px; /* Smaller padding for buttons */
+        font-size: 0.9em; /* Reduced font size for buttons */
+    }
+}
+        /* Footer */
+        footer {
+            background: #2F2827;
+            color: #CCCCCC;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            font-family: 'Rockwell Condensed', sans-serif;
+        }
+
+        footer p {
+            color: #FFF;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            body {
+                background-size: cover; /* Ensures texture fills mobile screen */
+                background-attachment: scroll; /* Fixes background scrolling issues on mobile */
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+        }
+        .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-icons i {
+    font-size: 20px; /* Set icon size to 10px */
+    color: #e0e0e0; /* Change color as needed */
+}
+.social-icons i:hover {
+    color: #DDBA94; /* Matches your theme */
+}
     </style>
 </head>
 
@@ -139,7 +385,7 @@
             <i class="fab fa-facebook"></i>
         </a>
         <a href="https://www.google.com/maps/place/FARMesilla,+Avenida+de+Mesilla,+Las+Cruces,+NM/@32.2932924,-106.7462774,30786m/data=!3m1!1e3!4m5!3m4!1s0x86de16151e21ec97:0xda4c8f9c1eade258!8m2!3d32.2795614!4d-106.79666?entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" aria-label="Google Maps">
-            <i class="fas fa-map-marker-alt"></i> <!-- Use the map marker icon -->
+            <i class="fas fa-map-marker-alt"></i> <!-- This is our font icon/asset that chef requested to be within/plastered over the homepage. -->
         </a>
     </div>
 </footer>
